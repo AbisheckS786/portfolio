@@ -1,0 +1,170 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow:5px 5px 20px rgba(0,0,0.5);
+    background-color: black;
+}
+.navbar .navbar-brand{
+    font-size:25px;
+    font-weight:800;
+    color:greenyellow !important
+}
+.logo{
+    border: 2px solid #033a80;
+    width: 80%;
+    border-radius: 100px;
+    max-width: 100px;
+    margin-bottom: -10px;
+  }
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent ;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid greenyellow;
+}
+#navbarSupportedContent button{
+    background: yellowgreen;
+    width: 5rem;
+    border-radius: 15px;
+}
+section{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**home**/
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url(lap.jpg);
+    background-size: cover;
+    background-position:center;
+    flex-direction: column;
+}
+#home span{
+    font-size: 100px;
+    color:white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    text-shadow: 0px 1px 0px #03f11bec,0px 2px 0px #03f11bec,0px 3px 0px #03f11bec,
+    0px 4px 0px #e91d1d,0px 5px 0px #cc3030,0px 6px 0px #d52929,0px 7px 0px #e93f3f;
+}
+
+span{
+    font-size: 25px;
+    font-family: cursive;
+    color: rgb(239, 197, 12);
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+#home p{
+    font-size: 25px;
+    color: #ccc;
+}
+#home h{
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 1px 0px #ccc,0px 2px 0px #ccc,0px 3px 0px #ccc,;;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+
+#about{
+    background: linear-gradient(to right,#ea1d6f,#eb466b 100%);
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+}
+
+#about img{
+    width: 350px;
+    height: 550px;
+    background : #e5e5e5 !important;
+    border :none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    transition: .2s;
+}
+
+#about p{
+    color: white;
+    width: 80%;
+    height: 50px;
+    padding: 30px;
+    margin: 20px;
+    letter-spacing: 2px;
+}
+#projects{
+ background-color: #e5e5e5;
+}
+#projects h1{
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.card{
+    width: 250px !important;
+    height: 300px !important;
+    background : #e5e5e5 !important;
+    border :none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 20px 60px !important;
+    transition: .2s !important;
+}
+
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+#contact img{
+    transition: 0;
+    padding: auto;
+    border-radius: 10%;
+   
+}
+#contact button{
+    background-color: greenyellow;
+}
+footer{
+    width: 100%;
+    height: 30px ;
+    margin-top: -30px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
